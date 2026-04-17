@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { ShoppingBag, Settings } from 'lucide-react'
+import { ShoppingBag } from 'lucide-react'
 
 export default function Header() {
   return (
@@ -23,12 +22,6 @@ export default function Header() {
           </Link>
         </nav>
 
-        <Link href="/admin">
-          <Button variant="outline" size="sm" className="gap-2 bg-transparent">
-            <Settings className="w-4 h-4" />
-            Admin
-          </Button>
-        </Link>
       </div>
     </header>
   )
